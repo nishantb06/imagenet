@@ -7,8 +7,6 @@
 *.joblib
 *.joblib
 
-
-*.mov
 *.mp4
 *.avi
 *.mkv
