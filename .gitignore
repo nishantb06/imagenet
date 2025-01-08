@@ -17,3 +17,13 @@
 *.flac
 
 *.DS_Store
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.py3
+*.py3o
+*.py3d
+*.py3w
+*.py3z

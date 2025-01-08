@@ -1,8 +1,17 @@
 # Imagenet training
 
+## Training
+Training was done on a spot instance on AWS EC2. The training was done in 3 runs as the spot instance was being terminated by AWS.
+
+Dataset used was Imagenet 1k from [Kaggle](https://www.kaggle.com/c/imagenet-object-localization-challenge/data) , total size of the dataset was 155GB. 
+
+Total time taken per epoch was 25 minutes. And the final accuracy was 63.7760009765625. I noteced the model was overfitting becuase of not implementing cutmix and mixup. If i tried to implement cutmix and mixup, a memory leak was occuring and the instance would shutdown after a few iterations.
+
+
 ## Logs
 
-- ![wandblogs](charts-screenshot.png)
+- ![wandblogs](logs/charts-screenshot.png)
+
 ```
 TPU available: False, using: 0 TPU cores
 Sun Dec 29 17:58:42 2024
